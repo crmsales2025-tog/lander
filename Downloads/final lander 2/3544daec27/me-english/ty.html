@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!--******************** css link for owl carousel******************* -->
+    <link rel="stylesheet"  href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+<link rel="stylesheet"  href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
+
+    <!--******************** JS link for owl carousel******************* -->
+
+<script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+    <title></title>
+    <style>
+        body{
+            background: #f6f4f4;
+        }
+        .main-img{
+                margin: 1rem auto;
+                    }
+        .thanks-msg{
+            padding: 2rem;
+        }
+        .thanks-msg span{
+            color: blue;
+            font-weight: 500;
+        }
+        .thanks-msg h2{
+            font-size: 2rem;
+        }
+        .thanks-msg img{
+            width: 2rem;
+            margin-left: 1rem;
+        } 
+        p span{color: blue;
+            font-weight: 500;
+
+        }
+        .main p{
+            font-size: 1.5rem;
+        }
+        .main p img{
+            width: 2.5rem;
+        }
+        .static-border {
+            line-height: 1rem;
+            background: #03ac00;
+            height: 1px;
+            margin: 0 4rem;
+        }
+        .other-products{
+            text-align: left;
+            margin: 3rem;
+        }
+        .heading {
+            color: #14285b;
+            font-weight: 500;
+        }
+          .container .card {
+            margin: 1rem 0;
+        }
+        .card-body p{
+            font-size: 1rem;
+        }
+        .modal-back{
+            background: grey;
+            font-size: 20px;
+            color: white;
+                }
+                #__vtigerWebForm{
+                    border-radius: 1rem;
+                    background: #e4d6d6;
+                    margin: 4% auto;
+                    width: 100%
+                }
+                .card-footer p{
+                    font-size: 1rem; 
+                    margin-bottom: 30px;
+                }
+                .card-footer button{
+                    margin-bottom: 20px
+                }
+                .order-id{
+                    font-size: 1.5rem
+                }
+                #demo{
+                    color: yellow;
+                }
+
+                .blink-bg{
+                    color: #fff;
+                    padding: 10px;
+                    display: inline-block;
+                    border-radius: 5px;
+                    animation: blinkingBackground 2s infinite;
+                }
+                .blink{
+                    color: #fff;
+                    padding: 10px;
+                    display: inline-block;
+                    border-radius: 5px;
+                    animation: blinking 3s infinite;
+                }
+                .video{
+                       box-shadow: 8px 8px 8px 8px #f6f4f4; 
+                }
+                .contact-form {
+                  max-width: 400px;
+                  width: 100%;
+                  margin: 0 auto;
+                  position: relative;
+                }
+                .main-video{
+                    box-shadow: 4px 8px 8px 4px #f6f4f4;
+                    margin: 2rem 3rem 0 3rem;
+                    border-radius: 1rem;
+                }
+
+                 .contact-form button{
+                    border-radius: 1rem;
+                }
+                #contact-form{
+                    display: none;
+                }
+                .close-form{
+                    position: absolute;
+                    top: 4%;
+                    right: 4%;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+                @keyframes blinkingBackground{
+                    0%      { background-color: #10c018;}
+                    25%     { background-color: #1056c0;}
+                    50%     { background-color: #ef0a1a;}
+                    75%     { background-color: #254878;}
+                    100%            { background-color: #04a1d5;}
+                }
+                 @keyframes blinking{
+                    0%      { background-color: #898F51;}
+                    25%     { background-color: #B59B74;}
+                    50%     { background-color: #9E4C4C;}
+                    75%     { background-color: #7E57B8;}
+                    100%            { background-color: #4990AB;}
+                }
+                  .owl-carousel .owl-item img {
+                        height: 300px;
+                        width: 100%;
+                    }
+        .bttn { 
+        cursor: pointer; 
+        border: 2px solid #3498db;
+        background-color: transparent; 
+        color: white;; 
+        font-size: 1.5em; 
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+         
+    } 
+      #offer-zone {
+        display:none;
+      }
+      .yay{
+        font-size: 15px !important ;
+        color: white;
+        font-weight: 500;
+        margin: 1vw 5vw;
+        text-shadow: 2px 1px grey;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="card text-center  main">
+                <section class="top-thanx">
+                        <!-- <div class="col-sm-4"> -->
+                <!-- <img src="offer/me.png" class="img-fluid main-img"> -->
+             <!--   <div  class="text-center main-video ">
+                        <video width="100%" height="240"  autoplay muted loop >
+                          <source src="offer/me.mp4" type="video/mp4">
+                          <source src="offer/me.ogg" type="video/ogg">
+                         
+                        </video>
+                  
+
+                    </div> -->
+                    
+                <div class="thanks-msg">
+
+                <h2>Dear <span>CUSTOMER !</span> </h2> <img src="offer/tick.png" class="img-fluid">
+                </div>
+                <p class="mx-1 text-uppercase">We appreciate your interest and soon our health expert will call you regarding your order. <img src="offer/smile.png" class="img-fluid">
+                <div class="static-border"></div>
+                </p>
+                <div class="mt-2" >
+                <span class="order-id">Your Order Id is <strong>7637</strong></span>
+                 </br>
+                 <p class="mx-1 mx-md-5 blink yay ">
+                    Yay !  You won an additional gift with this purchase ! Please mention the order id to our Health Expert to add the gift to your order.
+                 </p> 
+              </br>
+      
+                  <div class="text-center"> 
+                    
+                    <strong class="blink-bg"><button class="bttn" onClick= "showsection()">Click Here For More Private Offers !</button></strong> </div>
+                </div>
+              
+                </section>
+                <section class="other-products" id="offer-zone">
+                    <div  class="text-center video">
+                        <video width="100%" height="240"  autoplay muted loop >
+                          <source src="offer/CONGRATULATIONS.mp4" type="video/mp4">
+                          <source src="offer/CONGRATULATIONS.ogg" type="video/ogg">
+                         
+                        </video>
+                  
+
+                    </div> 
+                    <div class="offer"> <p class="text-sm-center
+                    text-justify mx-1 mx-md-5"><span
+                    class="text-danger">Congratulations.</span> You have been
+                    selected as one of our 50 lucky customers & you get
+                    exclusive offers on these products.</p> <div
+                    class="text-center"> <strong class="blink-bg ">Hurry as
+                    this offer expires in <span id="demo"></span>
+                    minutes</strong> </div> </div>
+
+                    <div class="heading my-1">
+                     <marquee direction="left" class="d-none d-md-block"><h1 class="text-center"> Check Out Our Other Health Products!</h1></marquee>    
+                     <h4 class="d-block d-md-none font-weight-bold blink-bg">  Check Out Our Other Health Products!</h4> 
+
+                    </div>
+
+
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="card mx-2">
+                                <img src="offer/GL.png" class="img-fluid">
+                                    <div class="card-footer text-center">
+                                        <h4>GETLEAN</h4>
+                                        <p>Best weight loss products sold in the United States for over 10 years.!</p>
+                                        <button class="btn btn-outline-success btn-lg" onclick="showDiv()"> Claim Your Bottle!</button>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="item">
+                            <div class="card mx-2">
+                                <img src="offer/mega.jpg" class="img-fluid">
+                                    <div class="card-footer text-center">
+                                        <h4>MegaMan</h4>
+                                        <p>Increase Your muscle Size & sexual powers With MegaMan </p>
+                                        <button class="btn btn-outline-success btn-lg" onclick="showDiv()" > Claim Your Bottle!</button>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="item">
+                            <div class="card mx-2">
+                                <img src="offer/tulsi.png" class="img-fluid">
+                                    <div class="card-footer text-center">
+                                        <h4>TULSI PLUS</h4>
+                                        <p>Boost Your Immunity With Our Great Ayurvedic Formula!</p>
+                                        <button class="btn btn-outline-success btn-lg" onclick="showDiv()"> Claim Your Bottle!</button>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="item">
+                            <div class="card mx-2">
+                                <img src="offer/oil.png" class="img-fluid">
+                                    <div class="card-footer text-center">
+                                        <h4>MENXXXL Oil</h4>
+                                        <p>Increase Your Time, Size & Stamina With MenXXXL Products!</p>
+                                        <button class="btn btn-outline-success btn-lg" onclick="showDiv()" > Claim Your Bottle!</button>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        
+                    </div>
+                  <div class="contact-form" id="contact-form"> 
+
+                      <form   id="__vtigerWebForm" name="TY LP" action="https://crm.swasthyakart.com/modules/Webforms/capture.php" method="post" accept-charset="utf-8" enctype="multipart/form-data" class="p-3" >
+                        <input type="hidden" name="__vtrftk" value="sid:173fec773f17e4b25320f9a25a5508049f98d2d2,1591958559" /><input type="hidden" name="publicid" value="e799f03abb7c94a3cc62b2f5425e5c76" />
+                        <input type="hidden" name="urlencodeenable" value="1" /><input type="hidden" name="name" value="TY LP" />
+                        <input type="hidden" name="cf_868" data-label="" value="Thankyou Page" required="" />
+                        <select name="cf_895" data-label="label:Lead+Feedback+Status" required="" hidden="">
+                            <option value="">Select Value</option>
+                            <option value="In Progress" selected="">In Progress</option>
+                            <option value="Reject">Reject</option>
+                            <option value="Paid">Paid</option>
+                        </select>
+
+                         <span class="text-center text-md-left"> <h3 >One Last Step</h3><strong class="close-form" onclick="hidediv()">X</strong></span>
+                      <div class="form-group">
+                        <label for="lastname">Full Name:</label>
+                        <input type="text" name="lastname" class="form-control" data-label="" placeholder="Enter Your Fullname" value="" required="" />
+                        <input type="hidden" name="cf_850" data-label="" value="00" required="" />
+                      </div>
+                      <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" name="phone" class="form-control" placeholder="Enter Your Phone No." data-label="" value=""  maxlength="10" pattern="[6-9]{1}[0-9]{9}" required="" />
+                      </div>
+                      <div class="form-group">
+                        <select name="cf_856[]" data-label="label:Products" class="form-control" required="" multiple="" >
+                        <option value="">Select Your Products</option>
+                        <option value="MenXXL">Tulsi Plus</option>
+                        <option value="MenXXXL Oil">MenXXXL Oil</option>
+                        <option value="GetLean">MenXXXL</option>
+                        <option value="GetLean">GetLean</option>
+                    </select>
+                      </div>
+                     
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                  </div>
+                </section>
+
+                
+
+            </div>
+            <style>
+                html{
+                    scroll-behavior: smooth;
+                }
+                #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+            </style>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><span title="go to top">Top</span></button>
+
+        </div>
+        <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+ <script>
+            window.onload = function getUclick_c(){
+            var e=document.cookie.match(new RegExp("(?:^|; )"+"uclick"+"=([^;]*)"));
+            return e?decodeURIComponent(e[1]):void 0
+              }
+              function cnv_pixel(){
+                var e="https://redrockoffers.co/",n=document.createElement("img");
+                "function"==typeof window.getUclick_c?n.src=e+"click.php?cnv_id=OPTIONAL&payout=OPTIONAL&uclick=" +getUclick_c():n.src=e+"click.php?cnv_id=OPTIONAL&payout=OPTIONAL"
+          }
+          cnv_pixel();
+       </script>
+    
+<script type="text/javascript">
+    window.onload = function () {
+        var N = navigator.appName,
+            ua = navigator.userAgent,
+            tem;
+        var M = ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+        if (M && (tem = ua.match(/version\/([\.\d]+)/i)) != null) M[2] = tem[1];
+        M = M ? [M[1], M[2]] : [N, navigator.appVersion, "-?"];
+        var browserName = M[0];
+        var form = document.getElementById("__vtigerWebForm"),
+            inputs = form.elements;
+        form.onsubmit = function () {
+            var required = [],
+                att,
+                val;
+            for (var i = 0; i < inputs.length; i++) {
+                att = inputs[i].getAttribute("required");
+                val = inputs[i].value;
+                type = inputs[i].type;
+                if (type == "email") {
+                    if (val != "") {
+                        var elemLabel = inputs[i].getAttribute("label");
+                        var emailFilter = /^[_/a-zA-Z0-9]+([!"#$%&()*+,./:;<=>?\^_`{|}~-]?[a-zA-Z0-9/_/-])*@[a-zA-Z0-9]+([\_\-\.]?[a-zA-Z0-9]+)*\.([\-\_]?[a-zA-Z0-9])+(\.?[a-zA-Z0-9]+)?$/;
+                        var illegalChars = /[\(\)\<\>\,\;\:\"\[\]]/;
+                        if (!emailFilter.test(val)) {
+                            alert("For " + elemLabel + " field please enter valid email address");
+                            return false;
+                        } else if (val.match(illegalChars)) {
+                            alert(elemLabel + " field contains illegal characters");
+                            return false;
+                        }
+                    }
+                }
+                if (att != null) {
+                    if (val.replace(/^\s+|\s+$/g, "") == "") {
+                        required.push(inputs[i].getAttribute("label"));
+                    }
+                }
+            }
+            if (required.length > 0) {
+                alert("The following fields are required: " + required.join());
+                return false;
+            }
+            var numberTypeInputs = document.querySelectorAll("input[type=number]");
+            for (var i = 0; i < numberTypeInputs.length; i++) {
+                val = numberTypeInputs[i].value;
+                var elemLabel = numberTypeInputs[i].getAttribute("label");
+                var elemDataType = numberTypeInputs[i].getAttribute("datatype");
+                if (val != "") {
+                    if (elemDataType == "double") {
+                        var numRegex = /^[+-]?\d+(\.\d+)?$/;
+                    } else {
+                        var numRegex = /^[+-]?\d+$/;
+                    }
+                    if (!numRegex.test(val)) {
+                        alert("For " + elemLabel + " field please enter valid number");
+                        return false;
+                    }
+                }
+            }
+            var dateTypeInputs = document.querySelectorAll("input[type=date]");
+            for (var i = 0; i < dateTypeInputs.length; i++) {
+                dateVal = dateTypeInputs[i].value;
+                var elemLabel = dateTypeInputs[i].getAttribute("label");
+                if (dateVal != "") {
+                    var dateRegex = /^[1-9][0-9]{3}-(0[1-9]|1[0-2]|[1-9]{1})-(0[1-9]|[1-2][0-9]|3[0-1]|[1-9]{1})$/;
+                    if (!dateRegex.test(dateVal)) {
+                        alert("For " + elemLabel + " field please enter valid date in required format");
+                        return false;
+                    }
+                }
+            }
+            var inputElems = document.getElementsByTagName("input");
+            var totalFileSize = 0;
+            for (var i = 0; i < inputElems.length; i++) {
+                if (inputElems[i].type.toLowerCase() === "file") {
+                    var file = inputElems[i].files[0];
+                    if (typeof file !== "undefined") {
+                        var totalFileSize = totalFileSize + file.size;
+                    }
+                }
+            }
+            if (totalFileSize > 52428800) {
+                alert("Maximum allowed file size including all files is 50MB.");
+                return false;
+            }
+        };
+    };
+
+    function showDiv() {
+   document.getElementById ('contact-form').style.display = "block";
+}
+    function hidediv(){
+    document.getElementById ('contact-form').style.display="none";
+}
+  function showsection(){
+    document.getElementById('offer-zone').style.display="block";
+     document.getElementById("offer-zone").focus();
+}
+</script>
+
+
+                <!-- For OWL CAROUSEL -->
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    autoplay:true,
+
+    // nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+</script>
+
+<script>
+    // Set the date we're counting down to
+var countDownDate = new Date("may,28, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML =  hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
